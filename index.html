@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>The Wedding of Fitria & Dini</title>
+  </head>
+  <body>
+    <!-- Welcome -->
+    <div
+      id="welcome"
+      class="w-full h-screen flex flex-col justify-end items-center fixed z-30 top-0"
+    >
+      <div
+        class="absolute w-full h-full before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gray-900/80"
+      >
+        <img
+          src="/src/img/21.jpg"
+          fill
+          alt=""
+          class="object-cover w-full h-full"
+        />
+      </div>
+      <div class="absolute p-12 text-white text-sm">
+        <h1 class="text-5xl font-playfair">Fitria & Dini</h1>
+        <p class="text-center">23 June 2024</p>
+        <p class="text-center">Kepada Bapak/Ibu/Saudara/i</p>
+        <p class="text-center text-2xl font-bold my-4 capitalize"></p>
+        <button
+          onclick=""
+          id="openUndangan"
+          class="p-2 mx-auto my-4 text-white bg-[#B7B1A4] rounded-xl flex justify-center items-center gap-3"
+        >
+          <i class="fa-solid fa-paper-plane"></i>
+          Buka Undangan
+        </button>
+      </div>
+    </div>
+    <!-- Sambutan -->
+    <div
+      class="w-full h-screen relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-b before:from-transparent before:to-[#B7B1A4] text-white flex flex-col justify-end font-playfair"
+    >
+      <!-- Background -->
+      <div class="w-full h-full absolute top-0 -z-10">
+        <div class="w-full h-screen relative top-0 -z-10">
+          <div class="swiper mySwiper w-full h-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide relative overflow-hidden">
+                <img
+                  src="/src/img/1.jpg"
+                  class="object-cover w-full h-full"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide relative overflow-hidden">
+                <img
+                  src="/src/img/2.jpg"
+                  class="object-cover w-full h-full"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide relative overflow-hidden">
+                <img
+                  src="/src/img/3.jpg"
+                  class="object-cover w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="w-full py-8 z-10">
+        <h1 class="text-lg uppercase font-light text-center font-openSans">
+          the wedding of
+        </h1>
+        <h1 class="text-5xl text-center mb-4">Fitria & Dini</h1>
+        <div class="flex w-full items-center justify-center gap-1 px-12">
+          <div
+            class="px-1 py-4 w-[200px] leading-none bg-white/70 text-gray-800 rounded-lg flex flex-col justify-center items-center"
+          >
+            <h1 id="days">0</h1>
+            <p class="text-xs">Days</p>
+          </div>
+          <div
+            class="px-1 py-4 w-[200px] leading-none bg-white/70 text-gray-800 rounded-lg flex flex-col justify-center items-center"
+          >
+            <h1 id="hours">0</h1>
+            <p class="text-xs">Hours</p>
+          </div>
+          <div
+            class="px-1 py-4 w-[200px] leading-none bg-white/70 text-gray-800 rounded-lg flex flex-col justify-center items-center"
+          >
+            <h1 id="minutes">0</h1>
+            <p class="text-xs">Minutes</p>
+          </div>
+          <div
+            class="px-1 py-4 w-[200px] leading-none bg-white/70 text-gray-800 rounded-lg flex flex-col justify-center items-center"
+          >
+            <h1 id="seconds">0</h1>
+            <p class="text-xs">Seconds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#B7B1A4] text-white">
+      <div class="container mx-auto">
+        <h1 class="text-sm text-center py-4 -mt-1">Assalamualaikum Wr. Wb.</h1>
+        <p class="text-xs text-center px-7">
+          Segala Puji Bagi Allah SWT yang telah menjadikan hambanya hidup
+          berpasang-pasangan. Dengan memohon Ridho, Rahmat, dan Berkah Allah
+          SWT, kami bermaksud untuk mengundang Saudara/i dalam acara pernikahan
+          yang kami selenggarakan.
+        </p>
+      </div>
+      <!-- Slider -->
+      <div class="container mx-auto p-8 mb-[-60px]">
+        <div class="swiper mySwiper2 h-[65px]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide rounded-full overflow-hidden">
+              <img
+                src="/src/img/4.jpg"
+                class="object-cover w-full h-full"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide rounded-full overflow-hidden">
+              <img
+                src="/src/img/5.jpg"
+                class="object-cover w-full h-full"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide rounded-full overflow-hidden">
+              <img
+                src="/src/img/6.jpg"
+                class="object-cover w-full h-full"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide rounded-full overflow-hidden">
+              <img
+                src="/src/img/7.jpg"
+                class="object-cover w-full h-full"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="h-[50px] bg-[#F0F5FA]"></div>
+    </div>
+    <!-- Mempelai -->
+    <div>
+      <div class="container mx-auto px-4 py-8">
+        <h1 class="text-2xl text-center font-playfair">Bride & Groom</h1>
+        <div class="p-4">
+          <div class="flex justify-between my-4">
+            <img
+              src="/src/img/bride.jpg"
+              alt="mempelai wanita"
+              width="250"
+              class="rounded-xl object-cover shadow-md"
+            />
+            <div class="flex justify-center items-center">
+              <h1
+                class="text-2xl font-playfair font-bold text-nowrap rotate-90 text-[#8C806E]"
+              >
+                The Bride
+              </h1>
+            </div>
+          </div>
+          <div class="my-4 mr-16 text-center">
+            <h1 class="text-lg font-playfair font-bold py-2">
+              Fitria Nur Parida
+            </h1>
+            <p class="text-xs">
+              Putri Ke 2 Bapak Yayan Sutisna & Ibu Yandriyani (Almh)
+            </p>
+            <a
+              href="https://instagram.com/Fitrianp18"
+              class="p-2 mx-auto w-fit text-xs my-4 text-white bg-[#B7B1A4] rounded-xl flex justify-center items-center gap-3"
+            >
+              <i class="fa-brands fa-instagram"></i>
+              <p>Fitrianp18</p>
+            </a>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex flex-row-reverse justify-between my-4">
+            <img
+              src="/src/img/groom.jpg"
+              alt="mempelai pria"
+              width="250"
+              class="rounded-xl flex-1 object-cover shadow-md"
+            />
+            <div class="flex justify-center items-center">
+              <h1
+                class="text-2xl font-playfair font-bold text-nowrap -rotate-90 text-[#8C806E]"
+              >
+                The Groom
+              </h1>
+            </div>
+          </div>
+          <div class="my-4 ml-16 text-center">
+            <h1 class="text-lg font-playfair font-bold py-2">Dini Permana</h1>
+            <p class="text-xs">
+              Putri Ke 4 Bapak Nana Suryana & Ibu Nunung Maryati
+            </p>
+            <a
+              href="https://instagram.com/Dinipermana18"
+              class="p-2 w-fit text-xs mx-auto my-4 text-white bg-[#B7B1A4] rounded-xl flex justify-center items-center gap-3"
+            >
+              <i class="fa-brands fa-instagram"></i>
+              <p>Dinipermana18</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Mempelai -->
+    <!-- Ayat -->
+    <div class="bg-[#B7B1A4] px-4 py-8 text-center text-xs text-white">
+      <p>
+        &quot;Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+        pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan
+        merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan
+        sayang &quot;
+      </p>
+      <p class="uppercase mt-4 font-semibold">Q.S Ar-Rum Ayat : 21</p>
+    </div>
+    <!-- Akhir Ayat -->
+    <!-- Detail Acara -->
+    <div class="relative">
+      <!-- Background -->
+      <div class="w-full h-full absolute top-0 -z-10 opacity-20">
+        <div class="w-full h-full top-0 -z-10">
+          <div class="swiper mySwiper w-full h-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide relative overflow-hidden">
+                <img
+                  src="/src/img/1.jpg"
+                  class="object-cover w-full h-full"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide relative overflow-hidden">
+                <img
+                  src="/src/img/2.jpg"
+                  class="object-cover w-full h-full"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide relative overflow-hidden">
+                <img
+                  src="/src/img/3.jpg"
+                  class="object-cover w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="container mx-auto px-4 py-8">
+        <h1 class="text-2xl text-center py-5 font-playfair">Save the Date</h1>
+        <div class="grid w-full grid-cols-2 gap-[1px] overflow-hidden">
+          <img
+            src="/src/img/19.jpg"
+            class="w-full h-full rounded-tl-[60%] object-cover shadow-xl"
+            width="250"
+            alt=""
+          />
+          <img
+            src="/src/img/20.jpg"
+            alt=""
+            width="250"
+            class="w-full h-full object-cover rounded-br-[60%] shadow-xl"
+          />
+        </div>
+        <div class="flex rounded-b-lg overflow-hidden">
+          <div
+            class="bg-[#B7B1A4] text-center text-white flex justify-center items-center px-3"
+          >
+            <h1 class="font-playfair text-2xl w-10">
+              <span
+                class="block rotate-90 origin-center translate-y-[-40px] text-nowrap"
+              >
+                Wedding Event
+              </span>
+            </h1>
+          </div>
+          <div class="px-8 py-8 bg-slate-200/50 text-sm">
+            <div>
+              <h1 class="uppercase font-boldfont-playfair text-[#B7B1A4]">
+                Akad Nikah
+              </h1>
+              <p class="font-bold">23 Juni 2024</p>
+              <p class="font-bold">08.00 - Selesai</p>
+              <p class="text-xs">
+                Kp. Kubang Eceng Desa Mekarjaya, Kec Padakembang, Kabupaten
+                Tasikmalaya RT 02/ RW 04
+              </p>
+              <button
+                class="px-4 py-2 mx-auto my-4 text-white bg-[#B7B1A4] rounded"
+              >
+                Buka Map
+              </button>
+            </div>
+            <div>
+              <h1 class="uppercase font-boldfont-playfair text-[#B7B1A4]">
+                Resepsi
+              </h1>
+              <p class="font-bold">23 Juni 2024</p>
+              <p class="font-bold">11.00 - Selesai</p>
+              <p class="text-xs">
+                Kp. Kubang Eceng Desa Mekarjaya, Kec Padakembang, Kabupaten
+                Tasikmalaya RT 02/ RW 04
+              </p>
+              <button
+                class="px-4 py-2 mx-auto my-4 text-white bg-[#B7B1A4] rounded"
+              >
+                Buka Map
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Detail Acara -->
+    <!-- RSVP -->
+    <div class="bg-[#B7B1A4]">
+      <div class="container px-4">
+        <div class="h-[280px] pt-8">
+          <img
+            src="/src/img/22.jpg"
+            width="500"
+            class="rounded-tl-[40%] rounded-br-[40%] object-cover w-full h-full"
+            alt=""
+          />
+        </div>
+        <h1 class="text-2xl text-white font-playfair italic pb-4">RSVP</h1>
+        <p class="text-white text-xs">
+          Kirimkan Konfirmasi Kehadiran Kepada Mempelai Melalui Form Berikut.
+        </p>
+        <form
+          class="py-8 space-y-2"
+          method="post"
+          action="https://script.google.com/macros/s/AKfycbwk1VXaCoG3LycTRIKKB58kdQkLIUofPLHWo-nGotw_Fn1obaqdo4JJp0G55-fToRDP/exec"
+          id="rsvp"
+        >
+          <input
+            type="text"
+            name="Nama"
+            class="w-full p-2 rounded"
+            placeholder="Nama Lengkap"
+            id=""
+            required
+          />
+          <input
+            type="number"
+            name="Jumlah"
+            placeholder="1"
+            class="w-full p-2 rounded"
+            id=""
+            required
+          />
+          <button
+            type="submit"
+            class="w-full p-2 rounded border-2 border-[#eeebe4] bg-white text-[#B7B1A4]"
+          >
+            Kirim
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Akhir RSVP -->
+    <!-- Story -->
+    <div class="relative">
+      <div class="w-full h-full absolute top-0 -z-10 opacity-20">
+        <img src="/src/img/23.jpg" class="object-cover w-full h-full" alt="" />
+      </div>
+      <div class="container px-6 py-8">
+        <h1 class="text-2xl text-center py-4 font-playfair">Our Story</h1>
+        <div
+          class="swiper mySwiper3 bg-[#B7B1A4] rounded-tr-[90px] h-[180px] overflow-hidden shadow-[0_0_10px_rgba(0,0,0,0.5)]"
+        >
+          <div class="swiper-wrapper w-full h-full">
+            <div class="relative swiper-slide w-full h-full">
+              <img
+                src="/src/img/19.jpg"
+                width="300"
+                height="300"
+                class="object-cover w-full h-full"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide w-full">
+              <img
+                width="300"
+                height="300"
+                src="/src/img/17.jpg"
+                class="object-cover w-full h-full"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide w-full">
+              <img
+                width="300"
+                height="300"
+                src="/src/img/18.jpg"
+                class="object-cover w-full h-full"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex rounded-b-xl overflow-hidden">
+          <div>
+            <div class="p-8 bg-slate-200/50 text-sm">
+              <h1 class="uppercase font-bold font-playfair text-[#B7B1A4] mb-2">
+                Awal Bertemu
+              </h1>
+              <p>
+                Awal mula kami bertemu merupakan teman sejak kecil di bangku
+                sekolah
+              </p>
+            </div>
+            <div class="p-8 bg-slate-200/50 text-sm">
+              <h1 class="uppercase font-bold font-playfair text-[#B7B1A4] mb-2">
+                Menjalin Hubungan
+              </h1>
+              <p class="font-bold mb-2">12 Agustus 2017</p>
+              <p>
+                Setelah menjalin kedekatan dan berkomunikasi beberapa bulan dan
+                menemukan kecocokan akhirnya kami memutuskan untuk menjalin
+                sebuah komitmen
+              </p>
+            </div>
+            <div class="p-8 bg-slate-200/50 text-sm">
+              <h1 class="uppercase font-bold font-playfair text-[#B7B1A4] mb-2">
+                Bertunangan
+              </h1>
+              <p class="font-bold mb-2">04 Desember 2022</p>
+              <p>
+                Setelah menjalin hubungan beberapa tahun, akhirnya kami
+                memantapkan hati untuk membawa hubungan ini kejenjang yang lebih
+                serius untuk hidup dan menua bersama
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-[#B7B1A4] text-center text-white flex justify-center items-center px-3"
+          >
+            <h1 class="font-playfair text-2xl w-10">
+              <span
+                class="block rotate-90 origin-center translate-y-[-40px] text-nowrap"
+              >
+                Love Story
+              </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Akhir Story -->
+    <!-- Gallery -->
+    <div class="relative">
+      <div class="container px-4 py-8">
+        <h1 class="py-4 text-2xl text-center font-playfair">Gallery</h1>
+        <div class="my-8">
+          <div class="swiper thumb-swiper h-[400px]">
+            <div class="swiper-wrapper" id="thumb">
+              <!-- Content -->
+            </div>
+          </div>
+
+          <div class="swiper main-swiper mt-4 h-[50px]">
+            <div class="swiper-wrapper" id="main">
+              <!-- Content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Gallery -->
+    <!-- Ucapan -->
+    <div class="bg-[#B7B1A4] py-8 text-white">
+      <div class="container mx-auto px-4">
+        <h1 class="text-lg font-playfair px-4 italic">Ucapan Doa Restu</h1>
+        <p class="text-xs px-4 pt-8">
+          Ucapkan Selamat dan Doa Restu Kepada Mempelai Untuk Hari Bahagia
+          Mereka. Tekan Logo Ucapan Untuk Tampilkan atau Sembunyikan Ucapan.
+        </p>
+      </div>
+
+      <div
+        class="container mx-auto my-2 px-4 py-4 max-w-[calc(100%-32px)] bg-[#f0eeea] rounded-md border border-[#B7B1A4]"
+      >
+        <form class="space-y-2" method="post" id="ucapanDoa">
+          <input
+            placeholder="Nama"
+            type="text"
+            name="name"
+            class="block w-full border border-[#B7B1A4] text-black text-xs p-2 rounded-md placeholder:text-xs"
+          />
+          <textarea
+            placeholder="Ucapan"
+            name="comment"
+            class="block w-full border border-[#B7B1A4] text-black text-xs p-2 rounded-md placeholder:text-xs"
+            id=""
+          ></textarea>
+          <button
+            class="p-2 text-xs my-4 text-white bg-[#B7B1A4] rounded-md flex justify-center items-center gap-3"
+            type="submit"
+          >
+            Kirim
+          </button>
+        </form>
+        <div class="h-[200px] overflow-scroll">
+          <div class="divide-y h-auto divide-[#B7B1A4] grid grid-rows-3">
+            <!-- Content -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- Harapan -->
+    <div>
+      <div class="container mx-auto px-4 text-center my-8 space-y-4">
+        <h1 class="text-lg font-playfair font-bold">Doakan Kami</h1>
+        <p class="text-xs">
+          “Semoga Allah menghimpun yang terserak dari keduanya, memberkati
+          mereka berdua dan kiranya Allah meningkatkan kualitas keturunan
+          mereka, menjadikannya pembuka pintu rahmat, sumber ilmu dan hikmah
+          serta pemberi rasa aman bagi umat.”
+        </p>
+        <p class="text-xs">
+          (Doa Nabi Muhammad SAW, pada pernikahan putrinya Fatimah Azzahra
+          dengan Ali Bin Abi Thalib)
+        </p>
+      </div>
+    </div>
+    <!--  -->
+
+    <div
+      class="w-full h-screen bg-transparent flex flex-col text-white justify-end items-center relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-b before:from-transparent before:to-[#B7B1A4]"
+    >
+      <div class="w-full h-full absolute top-0 -z-10">
+        <div class="w-full h-screen relative top-0 -z-10">
+          <div class="swiper mySwiper w-full h-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide relative overflow-hidden">
+                <img
+                  src="/src/img/4.jpg"
+                  class="object-cover w-full h-full"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide relative overflow-hidden">
+                <img
+                  src="/src/img/5.jpg"
+                  class="object-cover w-full h-full"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide relative overflow-hidden">
+                <img
+                  src="/src/img/6.jpg"
+                  class="object-cover w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 space-y-2 bg-transparent z-10">
+        <p class="text-center text-xs uppercase tracking-widest">
+          Kami yang berbahagia
+        </p>
+        <h1 class="text-5xl text-center font-playfair">Fitria & Dini</h1>
+        <p class="text-xs text-center">
+          Merupakan sebuah kehormatan dan kebahagiaan bagi kami jika
+          Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu bagi kami.
+          Terima kasih
+        </p>
+      </div>
+    </div>
+    <div id="musikWrapper" class="fixed bottom-4 left-4 z-[99] cursor-pointer">
+      <i class="fa-solid fa-compact-disc text-xl text-[#776C53]"></i>
+      <audio id="musik" src="/audio/yovieNuno.mp3"></audio>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3f514dfbf4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
