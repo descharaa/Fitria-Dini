@@ -167,3 +167,26 @@ window.addEventListener("load", (e) => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Fungsi untuk mengambil query parameter dari URL
+  const getQueryParams = () => {
+    const params = {};
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    for (const [key, value] of urlParams.entries()) {
+      params[key] = value;
+    }
+
+    console.log(params);
+    return params;
+  };
+
+  const params = getQueryParams();
+  const nama = params["nama"];
+
+  const penerima = document.getElementById("penerima");
+
+  penerima.innerHTML = nama;
+});
