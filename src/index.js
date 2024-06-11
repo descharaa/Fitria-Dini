@@ -188,5 +188,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const penerima = document.getElementById("penerima");
 
-  penerima.innerHTML = nama;
+  penerima.innerHTML = nama ? nama : "";
 });
