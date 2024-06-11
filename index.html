@@ -157,6 +157,13 @@
                 alt=""
               />
             </div>
+            <div class="swiper-slide rounded-full overflow-hidden">
+              <img
+                src="/src/img/8.jpg"
+                class="object-cover w-full h-full"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -219,7 +226,7 @@
           <div class="my-4 ml-16 text-center">
             <h1 class="text-lg font-playfair font-bold py-2">Dini Permana</h1>
             <p class="text-xs">
-              Putri Ke 4 Bapak Nana Suryana & Ibu Nunung Maryati
+              Putra Ke 4 Bapak Nana Suryana & Ibu Nunung Maryati
             </p>
             <a
               href="https://instagram.com/Dinipermana18"
@@ -516,12 +523,12 @@
           <input
             placeholder="Nama"
             type="text"
-            name="name"
+            name="nama"
             class="block w-full border border-[#B7B1A4] text-black text-xs p-2 rounded-md placeholder:text-xs"
           />
           <textarea
             placeholder="Ucapan"
-            name="comment"
+            name="pesan"
             class="block w-full border border-[#B7B1A4] text-black text-xs p-2 rounded-md placeholder:text-xs"
             id=""
           ></textarea>
@@ -532,9 +539,13 @@
             Kirim
           </button>
         </form>
-        <div id="ucapan" class="h-[200px] overflow-y-auto">
-          <div class="divide-y h-auto divide-[#B7B1A4] grid grid-rows-3">
+        <div class="h-[200px] overflow-y-auto">
+          <div
+            id="ucapan"
+            class="divide-y h-auto divide-[#B7B1A4] grid grid-rows-3"
+          >
             <!-- Content -->
+
             <div class="py-4 px-8 text-xs text-[#999489]">
               <h1 class="font-bold text-[#b4a480] capitalize">nama</h1>
               <p class="my-1">comment</p>
@@ -625,6 +636,16 @@
       src="https://kit.fontawesome.com/3f514dfbf4.js"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"
+    ></script>
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"
+    ></script>
     <script type="module" src="/src/index.js"></script>
+    <script type="module" src="/src/firebase.js"></script>
   </body>
 </html>

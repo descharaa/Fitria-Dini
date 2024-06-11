@@ -107,35 +107,6 @@ const mainSwiper = new Swiper(".main-swiper", {
   },
 });
 
-const fetchData = async () => {
-  const response = await fetch("/comment.json");
-  const data = await response.json();
-  return data;
-};
-
-let data = await fetchData();
-console.log(data.comments);
-
-const ucapanDoa = document.querySelector("#ucapanDoa");
-
-ucapanDoa.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const formData = new FormData(ucapanDoa);
-  const name = formData.get("name");
-  const comment = formData.get("comment");
-
-  const response = await fetch("/comment.json", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      name,
-      comment,
-    }),
-  });
-});
-
 const welcome = document.getElementById("welcome");
 const openButton = document.getElementById("openUndangan");
 const musik = document.getElementById("musik");
