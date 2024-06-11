@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  #ucapan::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #ucapan::-webkit-scrollbar-thumb {
+    background-color: #999489;
+  }
+}

@@ -138,6 +138,24 @@ ucapanDoa.addEventListener("submit", async (e) => {
 
 const welcome = document.getElementById("welcome");
 const openButton = document.getElementById("openUndangan");
+const musik = document.getElementById("musik");
+const musikWrapper = document.getElementById("musikWrapper");
+
+function toggleMusik() {
+  if (musik.paused) {
+    musik.play();
+    musikWrapper.classList.add("animate-spin");
+  } else {
+    musik.pause();
+    musikWrapper.classList.remove("animate-spin");
+  }
+}
+
+musikWrapper.addEventListener("click", toggleMusik);
+
+window.addEventListener("load", () => {
+  document.body.style.overflow = "hidden";
+});
 
 openButton.addEventListener("click", () => {
   welcome.classList.add("top-[-120%]");
@@ -145,6 +163,9 @@ openButton.addEventListener("click", () => {
   welcome.classList.add("transition-all");
   welcome.classList.add("duration-[2s]");
   welcome.classList.add("ease-in-out");
+  musik.play();
+  musikWrapper.classList.add("animate-spin");
+  document.body.style.overflow = "auto";
 });
 
 window.addEventListener("load", (e) => {

@@ -532,9 +532,17 @@
             Kirim
           </button>
         </form>
-        <div class="h-[200px] overflow-scroll">
+        <div id="ucapan" class="h-[200px] overflow-y-auto">
           <div class="divide-y h-auto divide-[#B7B1A4] grid grid-rows-3">
             <!-- Content -->
+            <div class="py-4 px-8 text-xs text-[#999489]">
+              <h1 class="font-bold text-[#b4a480] capitalize">nama</h1>
+              <p class="my-1">comment</p>
+              <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-clock text-[#b4a480]"></i>
+                <p>time</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -602,9 +610,15 @@
         </p>
       </div>
     </div>
-    <div id="musikWrapper" class="fixed bottom-4 left-4 z-[99] cursor-pointer">
-      <i class="fa-solid fa-compact-disc text-xl text-[#776C53]"></i>
-      <audio id="musik" src="/audio/yovieNuno.mp3"></audio>
+    <div
+      id="musikWrapper"
+      class="fixed flex items-center justify-center bottom-4 left-4 z-[99] cursor-pointer"
+    >
+      <i
+        id="musikIcon"
+        class="fa-solid fa-compact-disc text-xl text-[#776C53]"
+      ></i>
+      <audio id="musik" src="/src/audio/yovieNuno.mp3"></audio>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
