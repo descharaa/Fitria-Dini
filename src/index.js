@@ -184,9 +184,13 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const params = getQueryParams();
-  const nama = params["nama"];
 
   const penerima = document.getElementById("penerima");
+  if (params.length == 0) {
+    penerima.innerHTML = "";
+  }
+
+  const nama = params["nama"];
 
   penerima.innerHTML = nama ? nama : "";
 });
